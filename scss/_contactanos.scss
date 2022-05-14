@@ -1,0 +1,154 @@
+//Contactanos
+.contactanos_page {
+    height: 800px;
+	color: $white;
+    .title_contactanos {
+        letter-spacing: 3.5px;
+        width: 100%;
+        height: 8%;
+        text-align: center;
+        align-items: center;
+        margin: 15px;
+        font-size: 3rem;
+        font-family: map-get($tipografias, titulos-generales);
+    }
+    .img_vino_contactanos {
+        width: 620px;
+        height: 487px;
+        border-radius: 5%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }
+    .vector1_contactanos_page {
+        background-color: transparent;
+        border: 18px solid #FFFFFF;
+        width: 12%;
+        height: 20%;
+        border-radius: 30px;
+        position: absolute;
+        top: -8%;
+        left: 25%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: rotate(8deg);
+    }
+    .vector2_contactanos_page {
+        background-color: transparent;
+        border: 20px solid #FFFFFF;
+        width: 213px;
+        height: 201px;
+        border-radius: 30px;
+        position: absolute;
+        left: -96px;
+        bottom: -420px;    
+        z-index: -1;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: rotate(-8deg);
+    }
+    .vector3_contactanos_page {
+        background-color: transparent;
+        border: 19px solid #FFFFFF;
+        width: 198px;
+        height: 190px;
+        right: 1px;
+        bottom: -420px;
+        border-radius: 30px;
+        position: absolute;
+        z-index: -6;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: rotate(3deg);
+    }
+    form {
+        display: flex;
+        justify-items: center;
+        justify-content: space-around;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 2px solid #CCC;
+        border-radius: 1em;
+        font-size: 1.3rem;
+        font-family: map-get($tipografias, titulos-generales);
+        width: 600px;
+        height: 60%;
+        padding: 1em;	
+        margin-top: 60px;
+        margin-left: 50%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 4px;
+            li + li {
+                margin-top: 1em;
+                label {
+                    display: inline-block;
+                    width: 99px;
+                    text-align: right;
+                }
+                input:focus {
+                    border-color: $black;
+                }
+                textarea {
+                    vertical-align: top;
+                    height: 5em;  
+                    &:focus {
+                        border-color: $black;}
+                }
+            }
+        }
+    }
+    .aura {
+        text-decoration: none;
+        color: $white;
+        &:hover{
+            color: $black;
+        }
+    }
+    .pagina_amiga {
+        background-color: #33093adc;
+        color: $white;
+        position: absolute;
+        width: 65%;
+        height: 100px;
+        left: 4%;
+        bottom: -35%;
+        padding-top: 20px;
+        padding-left: 20px;
+        box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+        font-family: map-get($tipografias, titulos-generales);
+        letter-spacing: 1px;
+    }
+    .button_enviar {
+        padding: 9px 15px;
+        letter-spacing: 1.5px;
+        display:inline-block;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 115px;
+        margin-top: 15px;
+        border-radius:2em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Caladea', serif;
+        font-weight:300;
+        color: $whitesmoke;
+        background-color: #33093ad5;
+        text-align:center;
+        transition: all 0.2s;
+        &:hover{
+            background-color: #704279d5;
+            }
+    }
+    .button_limpiar {
+        @extend .button_enviar;
+        }
+}
+
+@media all and (max-width:30em){
+	a.button3{
+	display:block;
+	margin:0.2em auto;
+	}
+	}
