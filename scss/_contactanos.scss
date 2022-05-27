@@ -1,0 +1,227 @@
+//Contactanos
+.contactanos_page {
+    width: 100%;
+    height: auto;
+	color: $white;
+    .container_contactacnos_page {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        width: auto;
+    .title_contactanos {
+        letter-spacing: 3.5px;
+        width: 100%;
+        color: $black;
+        text-align: center;
+        margin: 15px;
+        font-size: 3rem;
+        font-family: map-get($tipografias, titulos-generales);
+    }
+    .img_vino_contactanos {
+        width: 600px;
+        height: auto;
+        border-radius: 5%;
+        left: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: relative;
+        
+    }
+    form {
+        position: relative;
+        display: flex;
+        justify-items: center;
+        justify-content: space-around;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 2px solid #CCC;
+        border-radius: 1em;
+        font-size: 1.3rem;
+        font-family: map-get($tipografias, titulos-generales);
+        width: 36.5%;
+        height: auto;
+        padding: 1em;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 29px;
+            width: 100%;
+            
+            .nombre {
+                border-radius: 5px;
+                width: 100%;
+            }
+            li + li {
+                margin-top: 1em;
+                
+                width: 100%;
+                input {
+                    width: 100%;
+                    vertical-align: top;
+                    border-radius: 5px;
+                }
+                input:focus {
+                    border-color: $black;
+                }
+                textarea {
+                    vertical-align: top;
+                    height: 5em;
+                    width: 100%;
+                    border-radius: 5px;
+                    &:focus {
+                        border-color: $black;}
+                }
+            }
+            .button_enviar {
+                padding: 9px 15px;
+                letter-spacing: 1.5px;
+                display: inline;
+                cursor: pointer;
+                font-size: 16px;
+                margin-top: 15px;
+                border-radius:2em;
+                box-sizing: border-box;
+                text-decoration: none;
+                font-family: 'Caladea', serif;
+                font-weight:300;
+                color: $whitesmoke;
+                background-color: #33093ad5;
+                text-align: center;
+                transition: all 0.2s;
+                &:hover{
+                    background-color: #704279d5;
+                    }
+            }
+            .button_limpiar {
+                @extend .button_enviar;
+                }
+        }
+    }
+    .aura {
+        text-decoration: none;
+        color: $white;
+        &:hover{
+            color: $black;
+        }
+    }
+    .pagina_amiga {
+        grid-area: pagina_amiga;
+        background-color: #33093adc;
+        color: $white;
+        position: relative;
+        width: 55%;
+        height: 100px;
+        margin-left: 5%;
+        margin-top: 30px;
+        padding-top: 20px;
+        box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+        font-family: map-get($tipografias, titulos-generales);
+        letter-spacing: 1.5px;
+        }   
+    }
+    .vector1_contactanos_page {
+        background-color: transparent;
+        border: 18px solid #FFFFFF;
+        width: 12%;
+        height: 20%;
+        border-radius: 30px;
+        position: absolute;
+        top: -8%;
+        left: 25%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: rotate(8deg);
+    }
+    .vector2_contactanos_page {
+        background-color: transparent;
+        border: 20px solid #FFFFFF;
+        width: 203px;
+        height: 191px;
+        border-radius: 30px;
+        position: absolute;
+        left: -96px;
+        bottom: -180px;    
+        z-index: -1;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: rotate(-8deg);
+    }
+    .vector3_contactanos_page {
+        background-color: transparent;
+        border: 19px solid #FFFFFF;
+        width: 198px;
+        height: 190px;
+        right: 15px;
+        bottom: -190px;
+        border-radius: 30px;
+        position: absolute;
+        z-index: -6;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: rotate(3deg);
+    }
+}
+
+
+
+@media all and (max-width: 465px){
+    .contactanos_page {
+        width: 100%;
+        height: auto;
+    }
+	.vector1_contactanos_page {
+        display: none;
+    }
+    .vector3_contactanos_page {
+        display: none;
+    }
+
+    a.button3 {
+	display: block;
+	margin: 0.2em auto;
+	}
+    .contactanos_page .container_contactacnos_page {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .contactanos_page .container_contactacnos_page .img_vino_contactanos {
+        width: 89%;
+        height: auto;
+        margin: 0;
+        border: none;
+        position: relative;
+    }
+    .container_contactacnos_page .title_contactanos {
+        font-size: 2.5rem;
+    }
+    .contactanos_page .vector2_contactanos_page {
+        position: absolute;   
+        z-index: -1;
+        width: 133px;
+        height: 121px;
+        border-radius: 30px;
+        border: 13px solid #FFFFFF;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: rotate(-8deg);
+    }
+    .contactanos_page .container_contactacnos_page form {
+        font-size: 1.2rem;
+        width: 89%;
+    }
+    .contactanos_page .container_contactacnos_page form ul {
+        margin-left: 15px;
+    }
+
+
+    .contactanos_page .container_contactacnos_page .pagina_amiga {
+        display: none;
+    }
+    
+	}
+
+    

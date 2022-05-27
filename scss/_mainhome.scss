@@ -1,0 +1,127 @@
+//Main Home
+main {
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	color: $whitesmoke;
+    .vector1 {
+        width: 12%;
+        height: 18%;
+        background-color: transparent;
+        border: 19px solid $whitesmoke;
+        position: absolute;
+        top: -10%;
+        left: 19%;
+        box-shadow: rgba(65, 65, 70, 0.2) 0px 7px 29px 0px;
+        border-radius: 30px;
+        background-color: transparent;
+        transform: rotate(10deg);
+    }
+    .vector2 {
+        background-color: transparent;
+        border: 20px solid #FFFFFF;
+        width: 203px;
+        height: 191px;
+        border-radius: 30px;
+        position: absolute;
+        left: -115px;
+        bottom: -0px;    
+        z-index: -1;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .vector3 {
+        background-color: transparent;
+        border: 19px solid $white;
+        width: 198px;
+        height: 190px;
+        right: 1px;
+        border-radius: 30px;
+        position: absolute;
+        bottom: 4%;
+        z-index: -6;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: rotate(3deg);
+    }
+    .container_home {
+        display: grid;
+        grid-template-columns:  55% 45%;
+        grid-template-rows: 1fr;
+        width: 90%;
+        height: auto;
+        .container_titulos {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 3px;
+            margin: 5px;
+            height: auto;
+            
+        .mensaje_bienvenida {
+            width: 80%;
+            height: auto;
+            font-size: map-get($tipografias, font-size);	
+            letter-spacing: 3px;
+            font-family: map-get($tipografias, titulos-generales);
+            margin: 6% 0 5% 10%;
+            padding-top: 3%;
+            
+        }
+        .mensaje_bienvenida2 {
+            font-size: 1.4rem;
+            width: 88%;
+            height: auto;
+            letter-spacing: 1.5px;
+            font-family: map-get($tipografias, subtitulos );
+            margin-left: 10%;
+        
+            .links_home {
+                text-decoration: none;
+            }
+        }
+        .container_image_vino {
+            .img-vino {
+                height: 510px;
+            }
+        }
+    }
+        .destacado {
+            color: $black;
+        }
+    }
+}
+
+@media (max-width: 465px) {
+    main .container_home {
+        grid-template-columns: 1fr;
+        
+    }
+    main .container_home .container_titulos {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        grid-template-rows: 180px 150px;
+        gap: 10px;
+    }
+    main .container_home .container_titulos .mensaje_bienvenida {
+        font-size: 2.5rem;
+        margin: 5px;
+        width: 97%;
+        height: 180px;
+    }
+    main .container_home .container_titulos .mensaje_bienvenida2 {
+        font-size: 1.2rem;
+        margin: 10px 5px;
+        width: 97%;
+        height: 130px;
+    }
+    .img-vino {
+        display: none;
+    }
+    .vector2 {
+        display: none;
+    }
+    .vector3 {
+        display: none;
+    }
+}
